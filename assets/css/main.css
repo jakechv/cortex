@@ -16,7 +16,7 @@ body {
   flex-flow: column;
   padding: 0;
   margin: 0;
-  background: #fafafc;
+  background: white;
   width: 100%;
   height: 100%;
   font-size: 17px;
@@ -135,16 +135,6 @@ iframe {
 
 .tippy-box > .tippy-arrow:before {
   transform: scale(2);
-}
-
-footer {
-  background: #fff;
-  align-items: center;
-  text-align: center;
-  color: #ccc;
-  border-top: 1px #ccc solid;
-  font-size: 12px;
-  min-height: 33px;
 }
 
 @media only screen and (max-width: 600px) {
