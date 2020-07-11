@@ -17,8 +17,8 @@ body {
 header {
   display: flex;
   background: #fff;
-  border-bottom: 1px #ccc solid;
-  margin-bottom: -1px;
+  border-bottom: 2px #ccc solid;
+  margin-bottom: -2px;
 }
 
 .site-title {
@@ -53,7 +53,7 @@ header {
 
 .page {
   padding: 20px 50px;
-  border: 1px #ccc solid;
+  border: 2px #ccc solid;
   display: inline-block;
   max-width: 90%;
   height: 100% !important;
@@ -61,6 +61,8 @@ header {
   vertical-align: top;
   box-sizing: border-box;
   font-size: 16px;
+
+  margin-left: -2px;
 }
 
 #text {
