@@ -1,6 +1,5 @@
 let pages = [window.location.pathname];
 let switchDirectionWindowWidth = 900;
-let animationLength = 0;
 
 function stackNote(href, level) {
   level = Number(level) || pages.length;
@@ -33,7 +32,7 @@ function unstackNotes(level) {
   pages = pages.slice(0, level);
 }
 
-function fetchNote(href, level, animate = false) {
+function fetchNote(href, level) {
   level = Number(level) || pages.length;
 
   const request = new Request(href + "/page.html");
@@ -53,10 +52,6 @@ function fetchNote(href, level, animate = false) {
           element.dataset.level = level + 1;
           initializePreviews(element, level + 1);
           element.scrollIntoView();
-          if (animate) {
-            element.animate([{ opacity: 0 }, { opacity: 1 }], animationLength);
-          }
-
           if (window.MathJax) {
             window.MathJax.typeset();
           }
