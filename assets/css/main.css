@@ -26,6 +26,12 @@ header {
   margin: 0;
 }
 
+#logo {
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px;
+}
+
 .grid-container {
   flex: 1;
   display: flex;
