@@ -18,6 +18,7 @@ header {
   display: flex;
   background: #fff;
   border-bottom: 1px #ccc solid;
+  margin-bottom: -1px;
 }
 
 .site-title {
