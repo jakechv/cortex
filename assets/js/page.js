@@ -1,6 +1,6 @@
 let pages = [window.location.pathname];
 let switchDirectionWindowWidth = 900;
-let animationLength = 200;
+let animationLength = 0;
 
 function stackNote(href, level) {
   level = Number(level) || pages.length;
@@ -106,24 +106,6 @@ let tippyOptions = {
   placement: "right",
 };
 
-function createPreview(link, overrideOptions) {
-  level = Number(link.dataset.level);
-  tip = tippy(
-    link,
-    Object.assign(
-      {},
-      tippyOptions,
-      {
-        content:
-          '<iframe width="400px" height="300px" src="' +
-          link.href +
-          '/embed.html"></iframe>',
-      },
-      overrideOptions
-    )
-  );
-}
-
 function initializePreviews(page, level) {
   level = level || pages.length;
 
@@ -149,12 +131,6 @@ function initializePreviews(page, level) {
           .then((response) => response.headers.get("content-type"))
           .then((ct) => {
             if (ct.includes("text/html")) {
-              createPreview(element, {
-                placement:
-                  window.innerWidth > switchDirectionWindowWidth
-                    ? "right"
-                    : "top",
-              });
 
               element.addEventListener("click", function (e) {
                 if (!e.ctrlKey && !e.metaKey) {
