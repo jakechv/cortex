@@ -1,6 +1,11 @@
 html {
   font-family: "Arial", "Helvetica", sans-serif;
 }
+@supports(font-variation-settings:normal) {
+ html {
+  font-family: "Arial", "Helvetica", sans-serif;
+ }
+}
 
 html,
 body {
@@ -13,6 +18,7 @@ body {
   height: 100%;
   font-size: 16px;
 }
+
 
 header {
   display: flex;
@@ -37,7 +43,7 @@ header {
   flex: 1;
   display: flex;
   overflow-x: auto !important;
-  overflow-y: auto !important;
+  /* overflow-y: auto !important; */
   white-space: nowrap;
   flex-grow: 1;
 }
@@ -45,8 +51,8 @@ header {
 .grid {
   max-width: 100%;
   display: inline-block;
-  flex-grow: 1;
   font-size: 0;
+  flex-grow: 1;
 }
 
 .homepage {
@@ -59,6 +65,7 @@ header {
 }
 
 .page {
+  white-space: normal;
   padding: 20px 50px;
   border: 2px #ccc solid;
   display: inline-block;
@@ -67,7 +74,8 @@ header {
   vertical-align: top;
   box-sizing: border-box;
   font-size: 16px;
-
+  width: 625px;
+  box-sizing: border-box;
   margin-left: -2px;
 }
 

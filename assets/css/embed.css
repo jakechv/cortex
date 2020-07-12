@@ -14,12 +14,11 @@ body {
 
 p,
 li {
-  font-size: 12px;
-  line-height: 17px;
-  /* -webkit-letter-spacing: -0.017%; */
-  /* -moz-letter-spacing: -0.017%; */
-  /* -ms-letter-spacing: -0.017%; */
-  letter-spacing: -0.017%;
+  line-height:12px;
+  -webkit-letter-spacing:-.024%;
+  -moz-letter-spacing:-.024%;
+  -ms-letter-spacing:-.024%;
+  letter-spacing:-.024%
 }
 
 h1 {
@@ -49,5 +48,10 @@ a {
   user-select: none;
   pointer-events: none;
   color: rgba(10, 132, 255, 1);
+}
+
+.show-white-space {
+    white-space: pre-wrap;
+    white-space: pre;
 }
 
