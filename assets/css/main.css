@@ -155,9 +155,14 @@ iframe {
     padding: 0;
   }
 
-  .page > .content {
-    padding: 10px 20px;
+  .page {
+    width: 90%;
   }
+
+  .page > .content {
+    padding: 10px 10px;
+  }
+
 
   .backlinks .backlink-item {
     display: block;
