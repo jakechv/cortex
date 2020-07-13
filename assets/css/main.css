@@ -156,17 +156,48 @@ iframe {
   }
 
   .page {
-    width: 90%;
+    width: 96%;
+    padding: 8px 10px;
   }
 
   .page > .content {
     padding: 10px 10px;
   }
 
-
   .backlinks .backlink-item {
     display: block;
     width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 0px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  h4 {
+    margin: 5px;
+  }
+
+  h5 {
+    margin: 5px;
+  }
+
+  h6 {
+    margin: 5px;
+  }
+
+  p {
+    margin: 5px;
   }
 
   .page {
