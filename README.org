@@ -1,3 +1,7 @@
 #+TITLE: Cortex Theme
 
-Theme for my braindump. Currently largely copied from [[https://github.com/azlen/azlen.me/][azlen.me]].
+This is the theme for my wiki.
+It's been heavily modified from the upstream for greater accessibility and a different color scheme,
+but it still shares the same spirit.
+
+You can view my personal wiki [[https://wiki.chvatal.com][here]], or [[https://github.com/jakechv/wiki][check out the repository]].
