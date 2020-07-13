@@ -169,34 +169,34 @@ iframe {
     width: 100%;
   }
 
-  h1 {
+  .page > h1 {
     font-size: 24px;
     margin: 0px;
   }
 
-  h2 {
+  .page > h2 {
     font-size: 18px;
     margin: 5px;
   }
 
-  h3 {
+  .page > h3 {
     font-size: 16px;
     margin: 5px;
   }
 
-  h4 {
+  .page > h4 {
     margin: 5px;
   }
 
-  h5 {
+  .page > h5 {
     margin: 5px;
   }
 
-  h6 {
+  .page > h6 {
     margin: 5px;
   }
 
-  p {
+  .page > p {
     margin: 5px;
   }
 
