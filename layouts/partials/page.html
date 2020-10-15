@@ -2,5 +2,9 @@
     <div class="content">
       <h1>{{ .Title }}</h1>
       {{ .Content }}
+      <div>
+        {{ partial "page-meta-lastmod.html" . }}
+        {{ partial "page-meta-links.html" . }}
+      </div>
     </div>
 </div>
